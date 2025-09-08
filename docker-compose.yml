@@ -4,6 +4,6 @@ services:
     container_name: chromium-widevine-git
     security_opt:
       - seccomp:unconfined
-    shm_size: '2gb'
+    shm_size: '3gb'
     expose:
       - '3000'
