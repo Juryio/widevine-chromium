@@ -1,9 +1,11 @@
 services:
   chromium:
     image: lscr.io/linuxserver/chromium:latest
-    # A unique container name helps avoid conflicts
     container_name: chromium-widevine-git
     security_opt:
       - seccomp:unconfined
     shm_size: '2gb'
-    # Note: No 'volumes' or 'ports' sections. Coolify will manage these.
+    # Volumes are now defined directly in this file
+    volumes:
+      - '/home/juryi/chromium/config:/config'
+      - '/home/juryi/chromium/libwidevinecdm.so:/usr/lib/chromium/libwidevinecdm.so'
