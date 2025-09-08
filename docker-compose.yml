@@ -7,9 +7,3 @@ services:
     shm_size: '2gb'
     expose:
       - '3000'
-    volumes:
-      - '/home/juryi/chromium/config:/config'
-      - '/home/juryi/chromium/libwidevinecdm.so:/usr/lib/chromium/libwidevinecdm.so'
-    # This label tells Coolify's proxy which port to target
-    labels:
-      - "coolify.proxy.port=3000"
