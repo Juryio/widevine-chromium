@@ -7,3 +7,5 @@ services:
     shm_size: '3gb'
     expose:
       - '3000'
+    volumes:
+      - /home/juryi/chromium/config:/config
