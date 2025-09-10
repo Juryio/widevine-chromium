@@ -9,3 +9,4 @@ services:
       - '3000'
     volumes:
       - /home/juryi/chromium/config:/config
+      - /home/juryi/chromium/pulse/daemon.conf:/etc/pulse/daemon.conf
